@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="container header__container">
+                <nav class="nav">                
+                    <a href="#" class="nav__link">Home</a>         
+                    <a href="#" class="nav__link">About</a>                
+                    <a href="#" class="nav__link">Contact</a>                
+                    <a href="#" class="nav__link">Products</a>                
+                </nav>
+                <input
+                type="text"
+                class="field field_outlined header__search-field"
+                placeholder="Search..."
+                >
+                <button type="button" class="btn btn_filled header__buy-btn">
+                  BUY 99$
+                </button>            
+            </div>
+        </header>
+        <section class="products">
+            <div class="container products__container">
+                <h3 class="products-title">Some Products Site</h3>
+                <div class="products-card">
+                    <img src="./images/image_1.png" alt="Calvin Klein Obsession parfume image"> 
+                    <div class="products-descr">
+                        <h4 class="subtitle products-card-title">Calvin Klein Obsession</h4>
+                        <p class="products-card-text">
+                            It is a long established fact that a reader will be 
+                            distracted by the readable content of a page when 
+                            looking at its layout. The point of using Lorem 
+                            Ipsum is that it has a more-or-less normal distribution 
+                            of letters, as opposed to using 'Content here, content 
+                            here', making it look like readable English
+                        </p>
+                        <div class="card-nav">
+                            <button type="button" class="btn btn_outlined card__btn">BUY 25$</button>
+                            <a href="#" class="card__link">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-card card-reverse">
+                    <img src="./images/image_2.png" alt="second parfume image">
+                    <div class="products-descr descr-reverse">
+                        <h4 class="subtitle products-card-title">Lorem Ipsum is simply dummy text</h4>
+                        <p class="products-card-text text-reverse">
+                            It is a long established fact that a reader will be distracted 
+                            by the readable content of a page when looking at its layout. 
+                            The point of using Lorem Ipsum is that it has a more-or-less 
+                            normal distribution of letters, as opposed to using 'Content 
+                            here, content here', making it look like readable English
+                        </p>
+                        <div class="card-nav">
+                            <button type="button" class="btn btn_outlined card__btn">BUY 32$</button>
+                            <a href="#" class="card__link">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-card">
+                    <img src="./images/image_3.png" alt="third parfume image">
+                    <div class="products-descr">
+                        <h4 class="subtitle products-card-title">It has survived not only five centuries</h4>
+                        <p class="products-card-text">
+                            It is a long established fact that a reader will be 
+                            distracted by the readable content of a page when 
+                            looking at its layout. The point of using Lorem Ipsum 
+                            is that it has a more-or-less normal distribution of 
+                            letters, as opposed to using 'Content here, content 
+                            here', making it look like readable English
+                        </p>
+                        <div class="card-nav">
+                            <button type="button" class="btn btn_outlined card__btn">BUY 48$</button>
+                            <a href="#" class="card__link">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-shadow products__btn">
+                    View more products
+                </button>     
+            </div>            
+        </section>
+        <section class="contacts">
+            <div class="container contacts__container">
+                <h4 class="subtitle contacts__subtitle">Contact us</h4>
+                <div class="contacts__form">
+                    <input 
+                      type="text"
+                      class="field field_filled contacts__field"
+                      placeholder="Name"
+                    >
+                    <input 
+                      type="text"
+                      class="field field_filled contacts__field"
+                      placeholder="Surname"
+                    >
+                    <input 
+                      type="text"
+                      class="field field_filled contacts__field"
+                      placeholder="Email"
+                    >
+                    <textarea 
+                    name="textarea" 
+                    id="textarea" 
+                    cols="30" 
+                    rows="10" 
+                    placeholder="Message" 
+                    class="field field_filled contacts__field field-message"
+                    ></textarea>                    
+                    <button type="button" class="btn btn-shadow">
+                        Send message
+                    </button>                  
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container footer__contaier">
+                <p class="copyright">
+                    @Copyright 2016-2021 Some Product Site
+                </p>
+                <nav class="nav footer__nav">                
+                    <a href="#" class="nav__link footer__link">Home</a>         
+                    <a href="#" class="nav__link footer__link">About</a>                
+                    <a href="#" class="nav__link footer__link">Contact</a>                
+                    <a href="#" class="nav__link footer__link">Products</a>                
+                </nav>
+                <button type="button" class="btn btn_outlined footer__btn">
+                    To Cart
+                </button>                             
+            </div>
+        </footer>     
+    </div>    
+</body>
+</html>
