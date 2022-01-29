@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30vh;
+    max-width: 300px;
+    min-height: 100vh;
+    margin: 0 auto;    
+}
+
+/* SPINNER */
+
+.preloader-one {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid rgb(199, 199, 199);
+    border-top-color: rgb(102, 103, 171);
+    animation: rotate 0.5s linear infinite;
+}
+
+.preloader-one:hover {
+    animation-play-state: paused;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* BOUNCING DOTS */
+
+.preloader-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    height: 60px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(102, 103, 171);
+    position: relative;
+    animation: bounce 1s linear infinite;
+}
+
+.circle:nth-child(2) {
+    animation-direction: reverse;
+}
+
+.preloader-two:hover .circle {
+    animation-play-state: paused;
+}
+
+@keyframes bounce {
+    25% {
+        transform: translateY(-10px);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+}
+
+/* TURN OFF ANIMATIONS */
+
+@media (prefers-reduced-motion: reduce) {
+    .preloader-one,
+    .circle {
+      animation: none;
+    }
+}
+
