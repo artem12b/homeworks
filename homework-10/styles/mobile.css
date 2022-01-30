@@ -1,0 +1,105 @@
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .logo-container {
+        padding: 10px 0;
+    }
+
+    .logo-container .nav-open {
+        display: block;
+    }
+
+    .header-contacts {
+        justify-content: space-between;
+    }
+
+    .header-contacts .address,
+    .header-contacts .social-link,
+    .address::after,
+    .phone-number::after,
+    .social-link::after   {
+        display: none;
+    }
+
+    .header-nav {
+/*         justify-content: center;
+        align-items: stretch; */
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        padding: 64px 20px 20px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 12px 12px 0px 0px;
+        background-color: #fff;
+    }
+
+    #nav-trigger:checked + .header-nav {
+        display: flex;
+    }
+
+    .header-nav .nav-list {
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: stretch;
+        width: 100%; */
+        gap: 11px;
+    }
+
+    .header-nav .nav-item {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        border-radius: 12px;
+        background-color: #F5F5FA;
+    }
+
+    .header-nav .nav-close {
+        display: block;
+    }    
+    
+    .header-nav .nav-link {
+        padding: 8px;
+        border: none;
+        width: 100%;
+        font-size: 24px;
+        color: #24A3FF;
+    }
+
+    .services-card .card-header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 118px;
+    }
+
+    .footer-actions {
+        gap: 25px;
+    }
+
+    .footer-actions .footer-contacts {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-actions .footer-links {
+        margin: 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .copyrights {
+        text-align: center;
+    }
+
+}
