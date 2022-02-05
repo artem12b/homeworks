@@ -1,0 +1,85 @@
+@import 'mixins';
+@import 'colors';
+
+/* ONE */
+
+.nav {
+  .ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .li {
+    display: inline-block;
+  }
+
+  .a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      color: tomato;
+    }
+  }
+}
+
+/* TWO */
+
+.button {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; 
+  
+  &__success {
+    @extend .button;
+    border-color: $green;
+  }
+
+  &__error {
+    @extend .button;
+    border-color: $red;
+  }
+
+  &__warning {
+    @extend .button;
+    border-color: $yellow;
+  }
+}
+
+/* THREE */
+
+@for $i from 1 through 5 {
+  .block-#{$i}::before { 
+    
+    @if $i == 1 {
+      content: "the first one";
+    } @else if $i == 2 {
+      content: '#{$i}';
+    } @else if $i == 3 {
+      content: '#{$i}';
+    } @else if $i == 4 {
+      content: '#{$i}';
+    } @else if $i == 5 {
+      content: "the last one";
+    } @else {
+      content: "the last one";
+    }
+  } 
+}
+
+/* FOUR */
+
+.container {
+  @include container(1200px, 20px);
+}
+
+.container {
+  @include container(1200px);
+}
+
+.container {
+  @include container;
+}
