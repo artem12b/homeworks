@@ -56,16 +56,10 @@
     
     @if $i == 1 {
       content: "the first one";
-    } @else if $i == 2 {
-      content: '#{$i}';
-    } @else if $i == 3 {
-      content: '#{$i}';
-    } @else if $i == 4 {
-      content: '#{$i}';
     } @else if $i == 5 {
       content: "the last one";
     } @else {
-      content: "the last one";
+      content: '#{$i}';
     }
   } 
 }

@@ -1,3 +1,7 @@
+:root {
+    --color-hover: #c1446b;
+}
+
 /* HEADER */
 
 .header {
@@ -9,6 +13,24 @@
 .header .logo-container {
     display: flex;
     align-items: flex-start;
+}
+
+.logo-container .logo {
+    width: clamp(78px, calc(155 / 1360 * 100vw), 155px);
+}
+
+.logo-container .logo-slash {
+    width: clamp(11px, calc(22 / 1360 * 100vw), 22px);
+}
+
+.logo-container .logo-text {
+    width: clamp(71px, calc(141 / 1360 * 100vw), 141px);
+    font-size: clamp(19px, calc(38 / 1360 * 100vw), 38px);
+    line-height: clamp(22px, calc(45 / 1360 * 100vw), 45px);
+}
+
+.logo-container .logo-symbol {
+    width: clamp(21px, calc(41 / 1360 * 100vw), 41px);
 }
 
 .logo-text {
@@ -93,7 +115,7 @@
 .address:hover,
 .phone-number:hover,
 .social-link:hover {
-    color: #c1446b;
+    color: var(--color-hover);
 }
 
 .lang-btn:hover {
@@ -225,15 +247,17 @@
 .services-card .card-logo {
     display: flex;
     padding: 14px;
-    /* width: 92px;
-    height: 92px; */
     border-radius: 24px;
     background-color: #fff;
 }
 
-.services-card .corr-logo {
+.services-card:last-child .card-logo {
     padding: 22px;
 }
+
+/* .services-card .corr-logo {
+    padding: 22px;
+} */
 
 .services-card .card-title {
     margin: 0;
@@ -318,6 +342,11 @@
     background-color: #F5F5FA;
     text-decoration: none;
 }
+
+.case-card:hover .case-name {
+    color: var(--color-hover);
+    text-decoration: underline;
+}
   
 .case-hillel > .case-card {
     min-height: auto;
@@ -367,8 +396,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* width: 25%; */
-    flex-basis: 25%;
     height: 120px;
     flex-grow: 1;
     flex-shrink: 1;

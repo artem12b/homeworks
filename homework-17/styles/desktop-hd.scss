@@ -1,0 +1,147 @@
+:root {
+    --color-hover: #c1446b;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &-contacts {
+        display: flex;
+        align-items: center;
+    }
+
+    &-nav {
+        display: flex;
+        justify-content: flex-end;   
+        margin-top: 16px; 
+    }
+}
+
+.nav {
+    &-link {
+        border-bottom: 2px solid transparent;
+        padding-bottom: 2px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFF;
+        text-decoration: none;
+    
+        &:hover {
+            border-bottom: 2px solid #fff;
+        }
+    }
+
+    &-list {
+        display: flex;
+        gap: 0 15px;
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+    }
+}
+
+.langs {
+    &-list {
+        display: flex;
+        margin: 0;
+        padding-left: 0;
+        list-style: none;  
+    }
+
+    &-btn {
+        display: block;
+        padding: 3px 4px;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        background-color: transparent;
+        color: #fff;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 1px;
+        cursor: pointer;
+
+        &:hover {
+            border: 2px solid #F0145A;
+        }
+
+        &-active {
+            background-color: #F0145A;
+        }
+    }
+}
+
+.address,
+.phone-number,
+.social-link {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #B3B3BA;
+    text-decoration: none;
+
+    &::after {
+        content: '';
+        order: -1;
+        display: block;
+        width: 6px;
+        height: 6px;
+        margin: 0 10px;
+        border-radius: 50%;
+        background-color: #E6E6F0;
+    }
+
+    &:hover {
+        color: var(--color-hover);  /* root, вінести в колорс */
+    }
+}
+
+.phone-number {
+    font-weight: bold;
+}
+
+/* .hero {
+    background-image: url(./images/symbol.svg);
+} */
+
+
+/* SERVICES */
+
+.services {
+    position: relative;
+    margin-bottom: 20px; 
+    padding: 50px 0 60px; 
+    background-color: transparent;  
+    background-image: 
+    linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    /* background-image: url(/images/symbol.svg); */
+    border-radius: 0px 0px 12px 12px; 
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 20px;
+        right: 20px;
+        height: 10px;
+        background-color: #CACADB;
+        border-radius: 0px 0px 12px 12px;    
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 40px;
+        right: 40px;
+        height: 10px;
+        background-color: #E7E7F2;
+        border-radius: 0px 0px 12px 12px;  
+        z-index: -1;  
+    }
+}
